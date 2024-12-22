@@ -1,0 +1,280 @@
+Question 1: Define HTML. What is the purpose of HTML in web development?
+HTML(Hyper Text Markup Language)is the standard language used to create and structure content on the web. It provides the framework for web pages by defining elements such as headings, paragraphs, images, links, and more. HTML uses a system of tags and attributes to describe how content should be displayed and structured.
+
+Purpose of HTML in Web Development:
+-Content Structuring: HTML structures content into meaningful sections like headings, paragraphs, and lists.
+- Presentation: Defines how content is displayed in browsers, including text formatting and image placement.
+- Hyperlinking: Facilitates navigation between web pages through hyperlinks.
+- Integration: Serves as the foundation for incorporating CSS (for styling) and JavaScript (for interactivity).
+- Accessibility: Helps make web pages accessible to users with disabilities by using semantic elements.
+
+---
+
+Question 2: Explain the basic structure of an HTML document. Identify the mandatory tags and their purposes.
+
+The basic structure of an HTML document includes:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Title</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is an example paragraph.</p>
+</body>
+</html>
+
+Mandatory Tags and Their Purposes:
+1. <!DOCTYPE html>:Specifies the document type and version of HTML being used. It ensures proper rendering by browsers.
+2. <html>: The root element that encompasses all the content of the web page.
+3. <head>: Contains metadata about the document, such as the title, character encoding, and linked resources (CSS, JavaScript).
+4. <title>: Specifies the title of the web page, displayed in the browser’s title bar or tab.
+5. <body>: Contains the content that is displayed on the web page, including text, images, and other elements.
+
+---
+
+Question 3: What is the difference between block-level elements and inline elements in HTML? Provide examples of each.
+
+Block-Level Elements:
+- Occupy the entire width of their container and start on a new line.
+- Used to define larger structures in a document, such as sections or groups of content.
+- Examples:
+  - <div>: Defines a division or section in a document.
+  - <p>: Represents a paragraph.
+  - <h1> to <h6>: Define headings.
+  - <ul> and <ol>: Define unordered and ordered lists.
+
+Inline Elements:
+- Occupy only as much width as necessary and do not start on a new line.
+- Used to format or style a part of the content within a block-level element.
+- Examples:
+  - <span>: Used for styling a portion of text.
+  - <a>: Defines a hyperlink.
+  - <strong>: Indicates strong importance (usually bold).
+  - <em>: Indicates emphasis (usually italic).
+
+---
+Question 4: Discuss the role of semantic HTML. Why is it important for accessibility and SEO? Provide examples of semantic elements.
+
+Semantic HTML refers to HTML elements that have meaningful names, clearly describing their purpose and role in a document. Semantic elements improve readability for developers and assistive technologies.
+
+Importance of Semantic HTML:
+1. Accessibility:
+   - Screen readers and other assistive technologies can better interpret and navigate semantic elements.
+   - Example: Using <nav> for navigation menus helps users understand the context.
+
+2. SEO (Search Engine Optimization):
+   - Search engines prioritize content wrapped in semantic tags because they provide context about the content.
+   - Example: <article> signals an independent, self-contained piece of content.
+
+3. Readability and Maintenance:
+   - Semantic tags make the code easier to read and maintain by clearly defining the structure.
+
+Examples of Semantic Elements:
+- <header>: Defines the header of a document or section.
+- <footer>: Defines the footer of a document or section.
+- <article>: Represents a self-contained piece of content, such as a blog post.
+- <section>: Groups related content together.
+- <aside>: Defines content that is tangentially related to the main content.
+- <main>: Represents the dominant content of the document.
+
+By using semantic HTML, developers create web pages that are better optimized for users, assistive technologies, and search engines.
+
+
+
+
+
+
+
+
+
+
+Question 1: What are HTML forms used for? Describe the purpose of the input, textarea, select, and button elements.
+HTML forms are used to collect user input and send it to a server for processing. They are essential for creating interactive web applications, such as submitting login credentials, registering for a service, or entering search queries.
+
+Key form elements and their purposes:
+
+Input:
+
+Used to collect data in various formats such as text, passwords, email, numbers, dates, and more.
+It has different type attributes (text, password, email, checkbox, radio, file, etc.) to define the kind of data users can input.
+
+Textarea: 
+
+Used for entering large blocks of text, such as comments or feedback.
+Unlike the input element, it allows multi-line text input.
+
+Select:
+
+Creates a drop-down list of options.
+Users can choose one or multiple items depending on the multiple attribute.
+
+Button:
+
+Represents a clickable button.
+Commonly used for actions like submitting the form (type="submit"), resetting the form (type="reset"), or triggering custom JavaScript functions (type="button").
+
+
+Question 2: Explain the difference between the GET and POST methods in form submission. When should each be used?
+
+GET Method:
+
+Appends form data to the URL as query parameters.
+Data is visible in the URL and is limited in size.
+Use Cases: Suitable for requests that do not change server data, such as search queries or when bookmarking/sharing URLs is needed.
+
+POST Method:
+
+Sends form data in the HTTP request body.
+Data is not visible in the URL and has no size limitations (though practical server limits may apply).
+Use Cases: Preferred for sensitive or large data submissions, such as login credentials, payment information, or file uploads.
+
+
+Question 3: What is the purpose of the label element in a form, and how does it improve accessibility?
+The label element provides a descriptive text label for form elements (e.g., input fields, checkboxes, etc.). It helps users understand the purpose of a form field.
+
+Accessibility benefits:
+
+Screen Readers: Associating a label with a form control using the for attribute (or by nesting the form element within the label) allows screen readers to announce the label text when the form field gains focus.
+
+Click Target: Clicking on the label activates the associated form element, improving usability, especially for smaller elements like checkboxes or radio buttons.
+
+Context Clarity: Labels make forms more user-friendly and reduce ambiguity for all users, including those with cognitive disabilities.
+
+
+
+
+
+
+Question 1: Explain the structure of an HTML table and the purpose of each of the following elements: <table>, <tr>, <th>, <td>, and <thead>.
+An HTML table is used to organize data into rows and columns, creating a grid structure. It is defined using various elements:
+
+<table>:
+
+The root element of a table, which contains all table-related content, including rows, headers, and cells.
+Example:
+
+<table> ... </table>
+
+<tr> (Table Row):
+
+Represents a single row within the table.
+Example:
+
+<tr> ... </tr>
+
+
+<th> (Table Header):
+
+Defines a header cell in the table.
+Typically bold and centered by default.
+Used within a row (<tr>) to describe the type of data in the corresponding column.
+Example:
+
+<th>Header</th>
+
+
+<td> (Table Data):
+
+Represents a standard data cell in the table.
+Used to hold data in each row.
+Example:
+
+<td>Data</td>
+
+
+<thead> (Table Head):
+
+Groups the header rows (<tr> containing <th>) of the table.
+Improves accessibility and table organization.
+Example:
+
+<thead>
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+  </tr>
+</thead>
+
+
+Question 2: What is the difference between colspan and rowspan in tables? Provide examples.
+
+colspan:
+
+Allows a cell to span across multiple columns.
+Example:
+
+<table>
+  <tr>
+    <td colspan="2">Spans Two Columns</td>
+  </tr>
+  <tr>
+    <td>Column 1</td>
+    <td>Column 2</td>
+  </tr>
+</table>
+Output: A table where the first row has one cell that spans across two columns.
+
+rowspan:
+
+Allows a cell to span across multiple rows.
+Example:
+<table>
+  <tr>
+    <td rowspan="2">Spans Two Rows</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 2</td>
+  </tr>
+</table>
+Output: A table where the first column of the first row spans two rows.
+
+
+
+Question 3: Why should tables be used sparingly for layout purposes? What is a better alternative?
+
+1.Reasons to Avoid Tables for Layout:
+
+-Semantic Misuse: Tables are designed for tabular data, not page layouts. Using them for layout confuses screen readers and harms accessibility.
+
+-Code Complexity: Tables require nested rows and cells for layout, leading to bloated and harder-to-maintain HTML.
+
+-Responsive Design Issues: Tables are not flexible and make it difficult to create responsive layouts that adapt to various screen sizes.
+
+2.Better Alternative:
+
+-CSS (Cascading Style Sheets):
+Use modern CSS properties like flexbox and grid for layouts.
+
+Advantages:
+Cleaner and more semantic HTML.
+Better control over responsive designs.
+Easier to modify and maintain.
+
+Example (using CSS Grid):
+
+<div class="grid-container">
+  <div>Header</div>
+  <div>Sidebar</div>
+  <div>Content</div>
+  <div>Footer</div>
+</div>
+
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+    grid-gap: 10px;
+  }
+</style>
+
+
+
+
+
+
+
